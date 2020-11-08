@@ -3,15 +3,23 @@ package trabalhoMemento;
 public class main {
 	public static void main(String[] args) 
     {
-        Revista resvista = new Revista(1, "Minha revista");
-        resvista.setContent("Homem Aranha Primeira Edição (Revolution)");      //Conteudo Original
+		
+        Revista resvista = new Revista(0, "Minha revista");
+        
+        resvista.setContent("Homem Aranha Primeira Edição ");      //Conteudo Original
         System.out.println(resvista);
          
         revistaMemento memento = resvista.createMemento();   //memento
          
-        resvista.setContent("Homem Aranha Primeira Edição");      //alterando o conteudo 
-        System.out.println(resvista);
+        resvista.setContent("Homem Aranha Primeira Edição (Revolution)");      //alterando o conteudo 
+        System.out.println(resvista + "\n");
          
+       // resvista.restore(memento);       //Restaurar Conteudo
+       // System.out.println(resvista);    //Conteudo Original
+        
+        resvista.setContent("Homem Aranha Primeira Edição (Far Away)");
+        System.out.println(resvista);
+        
         resvista.restore(memento);       //Restaurar Conteudo
         System.out.println(resvista);    //Conteudo Original
     }

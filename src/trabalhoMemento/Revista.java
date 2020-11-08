@@ -6,30 +6,42 @@ public class Revista {
     private String content;
      
     public Revista(int id, String title) {
-        super();
-    	this.id = id;
-        this.title = title;
+       
+    	this.id = id ;
+       
+    	this.title = title;
+    
     }
     
     public revistaMemento createMemento() 
     {
-    	revistaMemento m = new revistaMemento(id, title, content);
-        return m;
+    	
+    	revistaMemento mementoss = new revistaMemento(id, title, content);
+        
+    	return mementoss;
     }
      
-    public void restore(revistaMemento m) {
-        this.id = m.getId();
-        this.title = m.getTitle();
-        this.content = m.getContent();
+    public void restore(revistaMemento mementos) {
+        
+    	this.id = mementos.getId();
+        
+    	this.content = mementos.getContent();
+        
+    	this.title = mementos.getTitle();
+       
     }
  
     @Override
     public String toString() {
-        return "Article [id=" + id + ", Titulo=" + title + ", Conteudo=" + content + "]";
+        
+    	return "Revista [id=" + id + ", Titulo=" + title + ", Conteudo=" + content + "]";
+    
     }
-
-public void setContent(String content) {
-		
-		this.content = content;
+    
+	public void setContent(String content) {
+			
+			this.content = content;
+	
 	}
+
 }

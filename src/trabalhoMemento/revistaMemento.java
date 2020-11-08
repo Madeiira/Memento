@@ -6,21 +6,31 @@ public final class revistaMemento {
     private final String content;
      
     public revistaMemento(int id, String title, String content) {
-        super();
+
         this.id = id;
+   
         this.title = title;
+        
         this.content = content;
+    
     }
  
     public int getId() {
-        return id;
+    
+    	return id;
+    
     }
  
     public String getTitle() {
-        return title;
+    
+    	return title;
+    
     }
  
     public String getContent() {
-        return content;
+    
+    	return content;
+    
     }
+
 }
