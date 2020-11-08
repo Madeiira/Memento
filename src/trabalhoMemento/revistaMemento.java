@@ -1,13 +1,13 @@
 package trabalhoMemento;
 
 public final class revistaMemento {
-	private final int id;
+	private final int edition;
     private final String title;
     private final String content;
      
-    public revistaMemento(int id, String title, String content) {
+    public revistaMemento(int edition, String title, String content) {
 
-        this.id = id;
+        this.edition = edition;
    
         this.title = title;
         
@@ -15,9 +15,9 @@ public final class revistaMemento {
     
     }
  
-    public int getId() {
+    public int getEdition() {
     
-    	return id;
+    	return edition;
     
     }
  

@@ -4,7 +4,7 @@ public class main {
 	public static void main(String[] args) 
     {
 		
-        Revista resvista = new Revista(0, "Minha revista");
+        Revista resvista = new Revista(0, "Revista em Quadrinhos");
         
         resvista.setContent("Homem Aranha Primeira Edição ");      //Conteudo Original
         System.out.println(resvista);

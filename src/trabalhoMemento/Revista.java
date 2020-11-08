@@ -1,13 +1,13 @@
 package trabalhoMemento;
 
 public class Revista {
-	private int id;
+	private int edition;
     private String title;
     private String content;
      
-    public Revista(int id, String title) {
+    public Revista(int edition, String title) {
        
-    	this.id = id ;
+    	this.edition = edition ;
        
     	this.title = title;
     
@@ -16,14 +16,14 @@ public class Revista {
     public revistaMemento createMemento() 
     {
     	
-    	revistaMemento mementoss = new revistaMemento(id, title, content);
+    	revistaMemento mementoss = new revistaMemento(edition, title, content);
         
     	return mementoss;
     }
      
     public void restore(revistaMemento mementos) {
         
-    	this.id = mementos.getId();
+    	this.edition = mementos.getEdition();
         
     	this.content = mementos.getContent();
         
@@ -34,7 +34,7 @@ public class Revista {
     @Override
     public String toString() {
         
-    	return "Revista [id=" + id + ", Titulo=" + title + ", Conteudo=" + content + "]";
+    	return "Revista [Edição=" + edition + ", Conteudo=" + title + ", Titulo=" + content + "]";
     
     }
     
