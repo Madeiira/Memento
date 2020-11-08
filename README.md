@@ -14,7 +14,7 @@
 
 
 ## Pasta com o codigo:
-[CODEPASTE](/Memento/src/trabalhoMemento/)
+[CODEPASTE](/src/trabalhoMemento/)
 
 ### Classe Revista.
 Neste exemplo, estamos criando memento para um Revista que possui três atributos básicos - id, título e conteúdo.
